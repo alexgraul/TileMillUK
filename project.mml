@@ -1,0 +1,132 @@
+{
+  "bounds": [
+    -0.5321,
+    51.2632,
+    0.2603,
+    51.7002
+  ],
+  "center": [
+    -0.1074,
+    51.5087,
+    11
+  ],
+  "format": "png",
+  "interactivity": false,
+  "minzoom": 11,
+  "maxzoom": 15,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss",
+    "highway.mss",
+    "labels.mss"
+  ],
+  "Layer": [
+    {
+      "id": "natural",
+      "name": "natural",
+      "srs": "",
+      "class": "natural",
+      "Datasource": {
+        "file": "layers/osm_natural/natural.shp",
+        "id": "natural",
+        "srs": null,
+        "project": "london"
+      },
+      "geometry": "polygon"
+    },
+      {
+      "id": "waterareas",
+      "name": "waterareas",
+      "srs": "",
+      "class": "water",
+      "Datasource": {
+        "file": "layers/osm_waterareas/london.osm-waterareas.shp",
+        "id": "location",
+        "srs": null,
+        "project": "london"
+      },
+      "geometry": "polygon"
+    },
+    {
+      "id": "highway-outline",
+      "name": "highway-outline",
+      "srs": "",
+      "class": "highway line",
+      "Datasource": {
+        "file": "layers/osm_highway/roads.shp",
+        "id": "highway-outline",
+        "srs": "",
+        "project": "london"
+      },
+      "geometry": "linestring"
+    },
+    {
+      "id": "highway",
+      "name": "highway",
+      "srs": "",
+      "class": "highway fill",
+      "Datasource": {
+        "file": "layers/osm_highway/roads.shp",
+        "id": "highway",
+        "srs": "",
+        "project": "london"
+      },
+      "geometry": "linestring"
+    },
+    {
+      "id": "highway-label",
+      "name": "highway-label",
+      "srs": "",
+      "class": "highway-label",
+      "Datasource": {
+        "file": "layers/osm_highway/roads.shp",
+        "id": "highway-label",
+        "srs": "",
+        "project": "london"
+      },
+      "geometry": "linestring"
+    },
+    {
+      "id": "location",
+      "name": "location",
+      "srs": "",
+      "class": "location",
+      "Datasource": {
+        "file": "layers/osm_location/places.shp",
+        "id": "location",
+        "srs": null,
+        "project": "london"
+      },
+      "geometry": "point"
+    },
+    
+
+    {
+      "id": "waterway",
+      "name": "waterway",
+      "srs": "",
+      "class": "waterway",
+      "Datasource": {
+        "file": "layers/osm_waterways/waterways.shp",
+        "id": "location",
+        "srs": null,
+        "project": "london"
+      },
+      "geometry": "linestring"
+    },
+    {
+      "Datasource": {
+        "file": "http://tilemill-data.s3.amazonaws.com/osm/shoreline_300.zip"
+      },
+      "class": "",
+      "geometry": "polygon",
+      "id": "shoreline_300",
+      "name": "shoreline_300",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+    }
+  ],
+  "legend": "<!-- This legend uses Unicode box-drawing characters to approxmate line styles. -->\n<span style='color:#DD3A85'>━</span> Motorways <br />\n<span style='color:#FFC81A'>━</span> Main roads <br />\n<span style='color:#fff'>━</span> Other roads <br />\n<span style='color:#69B'>┉</span> Bike paths <br />\n<span style='color:#6B9'>┉</span> Foot paths <br />\n<span style='color:#cea'>▉</span> Forest <br />\n<span style='color:#c0d8ff'>▉</span> Water ",
+  "name": "OSM London Demo",
+  "description": "An example of street-level map design.",
+  "attribution": "Data used by this map is © OpenStreetMap contributors,  CC-BY-SA. See <http://openstreetmap.org> for more info."
+}
