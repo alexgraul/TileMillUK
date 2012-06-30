@@ -1,7 +1,7 @@
 /* ---- PALETTE ---- */
 
-@motorway: #F8D6E0; /* #90BFE0 */
-@trunk: #FFFABB;
+@motorway: #eaf1ff; /* #90BFE0 */
+@trunk: #eaf1ff;
 @primary: @trunk;
 @secondary: @trunk;
 @road: #bbb;
